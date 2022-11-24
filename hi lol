@@ -1,0 +1,13 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/Robojini/Tuturial_UI_Library/main/UI_Template_1"))()
+local Window = Library.CreateLib("Build Tower Simulator", "RJTheme3")
+local Tab = Window:NewTab("auto")
+local Section = Tab:NewSection("о")
+Section:NewLabel("о привет")
+Section:NewButton("auto rebirth", "auto rebirth", function()
+for i =  1, 100000 do
+local A_1 = 65
+local Event = game:GetService("ReplicatedStorage").RemoteFunction.clientRequestServer
+Event:InvokeServer(A_1)
+wait(10)
+end
+end)
